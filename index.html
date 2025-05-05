@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake - Nâng cấp</title>
+  <link rel="stylesheet" href="vidu.css">
+</head>
+<body>
+    <h1>🐍 Trò chơi rắn săn mồi</h1>
+
+    <div id="level-select">
+      <label>Chọn độ khó: </label>
+      <select id="difficulty">
+        <option value="easy">Dễ</option>
+        <option value="medium">Trung Bình</option>
+        <option value="hard">Khó</option>
+        <option value="custom">Tùy chỉnh tốc độ</option>
+      </select>
+    
+      <input type="number" id="custom-speed" placeholder="Nhập tốc độ (ms)" class="hidden" min="30" max="500">
+      <button id="start-btn">Bắt đầu</button>
+    </div>
+    
+    <!-- Score and Game Board -->
+    <div id="score-board" class="hidden">
+      Điểm: <span id="score">0</span> | Cấp độ: <span id="level">1</span>
+    </div>
+    <div id="game-board" class="hidden"></div>
+    <div id="game-over" class="hidden">
+      <p>💀 Game Over!</p>
+      <button id="restart-btn">Chơi lại</button>
+    </div>
+    
+    <p>Điều khiển: ⬅️ ⬆️ ➡️ ⬇️</p>
+    
+
+  <script src="vidu.js"></script>
+</body>
+</html>
